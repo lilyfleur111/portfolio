@@ -1,0 +1,207 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f8f4f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ffb6c1;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures the nav bar is on top of other elements */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff69b4;
+}
+
+.section-center {
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff69b4;
+}
+
+/* Home Section */
+.home-section {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.home-img {
+    width: 100%;
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Me Section */
+.about-me {
+    background: linear-gradient(to right, #ffcccb, #ffb6c1); /* Unique gradient background */
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Ensure it doesn't overlap with other sections */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Make sure content is responsive */
+    gap: 20px;
+}
+
+.profile-img {
+    width: 150px; /* Adjusted size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 40px 20px;
+}
+
+.projects-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects-list li {
+    width: 300px; /* Adjust as needed */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ff69b4;
+}
+
+.project-info p {
+    margin: 5px 0;
+}
+
+/* Hover Effects for Project Items */
+.projects-list li:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contacts Section */
+.contacts-section {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff; /* Optional background color */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Ensure it doesn't overlap with other sections */
+}
+
+.contact-img {
+    width: 150px; /* Adjusted size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.contacts-section h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.contacts-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
